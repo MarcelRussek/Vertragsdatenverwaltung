@@ -25,33 +25,32 @@ Dieses Projekt umfasst eine Web-Anwendung, die für die Verwaltung von Kunden- u
 1. Klonen Sie das Repository:
    ```bash
    git clone https://github.com/IhrUsername/kunden-vertragsverwaltung.git
-Wechseln Sie in das Projektverzeichnis:
-bash
-Copy code
-cd kunden-vertragsverwaltung
-Installieren Sie die benötigten Pakete:
-bash
-Copy code
-pip install -r requirements.txt
-Starten Sie die Anwendung:
-bash
-Copy code
-streamlit run app.py
-Einrichtung der Datenbanken
+2. Wechseln Sie in das Projektverzeichnis:
+   ```bash
+   cd kunden-vertragsverwaltung
+3. Installieren Sie die benötigten Pakete:
+   ```bash
+   pip install -r requirements.txt
+4. Starten Sie die Anwendung:
+   ```bash
+   streamlit run app.py
+
+   
+## Einrichtung der Datenbanken
 Bevor Sie die Anwendung starten, stellen Sie sicher, dass die benötigten Datenbanken eingerichtet sind.
 
-Manuelle Datenbank (manuelle_daten.db):
-bash
-Copy code
-python manuelle_daten_db_erstellen.py
-Technische Datenbank (technische_daten.db):
-bash
-Copy code
-python technische_daten_db_erstellen.py
-Benutzung
+1. Manuelle Datenbank (manuelle_daten.db):
+   ```bash
+   python manuelle_daten_db_erstellen.py
+2. Technische Datenbank (technische_daten.db):
+   ```bash
+   python technische_daten_db_erstellen.py
+
+
+## Benutzung
 Nach dem Start der Anwendung können Sie über Ihren Webbrowser auf die Benutzeroberfläche zugreifen, die üblicherweise unter http://localhost:8501 erreichbar ist. Über die Seitenleiste können Sie verschiedene Module der Anwendung aufrufen und nutzen.
 
-Beitrag
+## Beitrag
 Pull Requests sind willkommen. Für größere Änderungen, bitte zuerst ein Issue eröffnen, um die Änderung zu diskutieren.
 
 Bitte führen Sie Tests durch, um sicherzustellen, dass keine Regressionen durch Ihre Änderungen entstehen.
