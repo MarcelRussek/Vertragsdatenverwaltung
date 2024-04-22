@@ -1105,7 +1105,7 @@ def main():
         if  vertrags_id_selection:
             st.write('Gewählter Vertrag:', str(st.session_state['vertrags_id']))
             
-    filtered_df2 = td[td['Vertrag'] == vertrags_id_selection][['EUR Net Premium Amount 2023', ' EUR Net Revenue 2023']]
+    filtered_df2 = td[td['Vertrag'] == vertrags_id_selection][['EUR Net Premium Amount 2023', 'EUR Net Revenue 2023']]
     st.dataframe(filtered_df2.style.format(thousands="",precision=2), hide_index=True) 
     st.markdown("<hr style='margin:0; border: none; border-top: 2px solid #002c77;'>", unsafe_allow_html=True)
     filtered_df1 = td[(td['Advisor'] == advisor_selection) & (td['Line of Business'] == line_of_business_selection)][['Vertrag', 'Kunde', 'Company / Office','Line of Business', 'Tax/Commission Code - Label', 'Leading Insurer']]
